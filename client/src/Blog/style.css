@@ -1,0 +1,22 @@
+.container {
+  background-color: aliceblue;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 40px;
+}
+input {
+  margin: 12px 0;
+  padding: 12px;
+}
+.listItem {
+  background-color: aqua;
+  border: 1px solid red;
+  width: 300px;
+}
+.Model {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
