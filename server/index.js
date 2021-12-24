@@ -28,36 +28,8 @@ mongoose.connect(process.env.DATABASE_MONGO, {
 app.get('/read', (req, res) => {
   res.send('Chao mongo');
 });
-
-// const Friend = require('./Friend/index');
-// const Point = require('./Transcript/index');
-
-// app.use('/friend', Friend);
-// app.use('/Point', Point);
-
-// const Blog = require('./Blog/controller/post');
-// // Blog MERN
-// app.use('/Blog', Blog);
-// // Product MERN
-// const product = require('./Product/controller/product');
-// const category = require('./Product/controller/category');
-// const Auth = require('./Product/controller/auth');
-// const Cart = require('./Product/controller/cart');
-// const Paypal = require('./Product/controller/paypal');
-// const Image = require('./Product/controller/Uploadimage/upload');
-// const Comment = require('./Product/controller/comment');
-// app.use('/product', product);
-// app.use('/category', category);
-// app.use('/cart', Cart);
-// // Authentication
-// app.use('/auth', Auth);
-// // Paypal
-// app.use('/paypal', Paypal);
-// // Upload images
-// app.use('/image', Image);
-
-const Blog = require('./Blog/controller/post');
-app.use('/Blog', Blog);
+const User = require('./Blog/controller/User');
+app.use('/User', User);
 
 // listen server
 http.listen(3001, () => {

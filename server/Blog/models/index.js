@@ -1,15 +1,15 @@
 const mongoose = require('mongoose');
-const BlogSchema = new mongoose.Schema(
+const UserSchema = new mongoose.Schema(
   {
-    title: {
+    firstName: {
       type: String,
       required: true
     },
-    body: {
+    lastName: {
       type: String,
       required: true
     },
-    author: {
+    email: {
       type: String,
       required: true
     }
@@ -18,5 +18,5 @@ const BlogSchema = new mongoose.Schema(
     timestamps: true
   }
 );
-const Blog = mongoose.model('Blog', BlogSchema);
-module.exports = Blog;
+const User = mongoose.model('User', UserSchema);
+module.exports = User;
